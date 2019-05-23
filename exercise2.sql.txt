@@ -1,0 +1,3 @@
+SELECT DISTINCT t1.id, t1.name, t1.age from t1 join t2 
+where t1.name not in (select t2.name from t2) 
+order by t1.id
